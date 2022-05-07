@@ -78,10 +78,18 @@
 /* head section */
 
 .head-section{
-  background-image: url('../img/main.jpg');
+  /* background-image: url('../img/main.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  position: relative;
+}
+
+.head-section video{
+  position: absolute;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
 }
 
 /* @media(max-width:768px){
@@ -99,18 +107,20 @@
   background-color: black;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .icon-div{
   display: flex;
   flex-direction: column;
-  justify-content:end;
-  align-items:flex-end;
+  justify-content:center;
+  align-items:flex-start;
   height: 100vh;
   position: relative;
   z-index: 2;
 }
+
+
 
 @media(max-width:768px){
   .icon-div{
@@ -128,18 +138,8 @@
   /* height: 270px; */
 }
 
-.icon-div div img{
-  width: 60%;
-  height: auto;
-  margin: 10px;
-}
-
-.icon-div div a{
-  color: white;
-  text-decoration: unset;
-}
-
-.icon-div div p{
+.icon-div  p{
+  font-size: xx-large;
   color: white;
 }
 
@@ -147,6 +147,8 @@
   background: unset;
   border: 2px solid white;
   color: white;
+  font-size: 20px;
+  padding: 10px ;
   border-radius: 10px;
 }
 
@@ -164,18 +166,30 @@
 .section-2-text-div{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
   align-items:flex-start;
   padding: 20px;
   text-align: left;
   margin: 20px auto ;
+  height: 100%;
 }
 
-.section-2-text-div h1{
-  margin: 20px 0px 10px;
-}
-.section-2-text-div p{
-  margin: 20px 0px 10px;
+/* @media(max-width:) */
+
+/* .section-2-text-div h1{
+  margin: 5px auto auto 0px;
+} */
+/* .section-2-text-div p{
+  margin: 5px auto auto 0px;
+} */
+
+.section-2-text-div button{
+  padding: 7px 13px;
+  border: 1px solid  white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  margin: 25px auto auto 0px;
 }
 
 .section-2-img-div {
@@ -190,7 +204,7 @@
 .section-2-img-div img{
   width: 70%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 2px solid black;
 }
 
@@ -215,11 +229,15 @@
 }
 
 .slick-div div img{
-  width: 80%;
+  width: 65%;
   height: auto;
   border: 2px solid black;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.slick-initialized .slick-slide{
+  height: 250px;
 }
 
 
@@ -236,11 +254,20 @@
 .section-4-text-div{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
   align-items:flex-end;
   padding: 20px;
   text-align: right;
   margin: 20px auto ;
+}
+
+.section-4-text-div button{
+  padding: 7px 13px;
+  border: 1px solid  white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  margin: 25px 0px auto auto;
 }
 
 .section-4-text-div h1{
