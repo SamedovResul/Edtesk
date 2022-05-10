@@ -182,65 +182,6 @@
 
 /* section-2-text-div */
 
-.section{
-  margin: 40px auto;
-}
-/* --- */
-
-
-.section-2-text-div{
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-items:flex-start;
-  padding: 20px;
-  text-align: left;
-  margin: 20px auto ;
-  height: 100%;
-}
-
-@media(max-width:768px){
-  .section-2-text-div{
-    justify-content:center;
-    align-items:center;
-  }
-}
-
-.section-2-text-div button{
-  padding: 7px 13px;
-  border: 1px solid  white;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-  margin: 25px auto auto 0px;
-}
-
-@media(max-width:768px){
-  .section-2-text-div{
-    align-items:center;
-    text-align: center;
-  }
-
-  .section-2-text-div button{
-    margin: auto;
-  }
-}
-
-.section-2-img-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-}
-
-.section-2-img-div img{
-  width: 70%;
-  height: auto;
-  border-radius: 15px;
-  border: 2px solid black;
-}
 
 /* slick section 3 */
 
@@ -257,6 +198,7 @@
 
 .section-3 .slick-initialized .slick-slide{
   height: 250px;
+  width: 400px;
   margin: auto 10px;
   border: 2px solid black;
   display: flex;
@@ -361,79 +303,85 @@
   margin: 20px 0px 10px;
 }
 
-/* gallery section */
+/* Area div */
 
-
-/* section-6 */
-.section-6{
-  background-color: black;
+.Area-container{
+  padding: 10px 0px;
+  height: auto;
 }
 
-/* slick div */
-
-
-
-.slick-comment-div {
-  display: flex !important;
-  justify-content: center;
+.Area-box{
+  width: 95%;
+  overflow: hidden;
   margin: 20px auto;
+  position: relative;
 }
 
-.slick-comment-div div img{
-  width: 80%;
-  height: auto;
-  border: 2px solid black;
-  border-radius: 10px;
-  object-fit: cover;
+.Area-box .product-information{
+  text-align: center;
 }
 
-.slick-slide{
-  width: 400px;
-  display: flex !important;
-  justify-content: center;
-}
-
-@media(max-width:1199px){
-  .slick-slide{
-    width: 380px;
-  }
-}
-
-.slick-comment-div .slick-track .slick-current {
-  margin: 0px !important ;
-}
-
-.slick-comment-div .slick-track .slick-current img {
-  width: 80%;
-  height: auto;
-}
-
-@media(max-width:567px){
-  .slick-track 
-  .slick-current img {
-    width: 70%;
-    height: auto;
-  }
-  .slick-track 
-  .slick-slide img{
-    width: 70%;
-    height: auto;
-  }
-}
-
-
-.slick-comment-div .slick-track{
-  display: flex !important;
+.Area-box .product-information div{
+  position: absolute;
+  top: 0px;
+  /* z-index: -1; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.slick-comment-div .slick-list{
-  padding: 0px 30px !important;
-  width: 90%;
+.Area-box .product-information div button{
+  padding: 7px 13px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
 }
 
-.slick-comment-div .slick-prev::before, .slick-next::before {
-  color: black !important;
+.Area-box .product-information .img{
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+}
+
+.Area-box .img img{
+  width: 200px;
+  height: 200px;
+}
+
+.fadeIN{
+  position: relative !important;
+  z-index: 2 !important;
+  opacity: 1;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+
+.fadeOut{
+  position: relative !important;
+  z-index: 0 !important;
+  opacity: 0.2;
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0.2;}
+}
+
+.product-text{
+  text-align: center;
+  padding: 20px;
 }
 
 /* form  */
@@ -446,9 +394,32 @@
   align-items:center;
   border-radius: 20px;
   border: 2px dashed white;
-  background-color: black;
+  background-color: white;
   margin: 20px auto;
   padding: 20px 0px;
+}
+
+.three-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.three-div label{
+  width: 25% !important;
+}
+
+.three-div label input{
+  background-color: white;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  border-bottom: 1px solid black;
+  outline: 0 !important;
+  padding: 10px;
 }
 
 .section-8 form label {
@@ -459,29 +430,20 @@
   align-items: center;
   width: 100%;
   padding-left: 10px;
-  color: white;
-}
-
-
-.section-8 form label input{
-  margin-right: 10px;
-  width: 80%;
-  height: 40px;
-  outline:0 !important;
-  border: 1px solid solid rgb(119, 113, 113);
-  border-radius: 10px;
-  padding-left: 5px;
-  margin: 1px auto 0px auto ;
-  /* border-bottom: 2px solid rgb(119, 113, 113); */
+  color: blacks;
 }
 
 .section-8 form label textarea{
   height: 150px;
-  width: 80%;
-  border: 2px solid black;
+  width: 90%;
+  border:none;
+  border-bottom: 1px solid black;
+  background-color: white;
   border-radius: 10px;
   margin-right: 10px;
   padding: 10px;
+  outline: 0 !important;
+  color: black;
 }
 
 .form-div  button{

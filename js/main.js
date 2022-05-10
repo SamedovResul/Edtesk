@@ -30,8 +30,8 @@ $(document).ready(function() {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     centerMode:true,
     variableWidth: true,
     // autoplay:true,
@@ -67,48 +67,7 @@ $(document).ready(function() {
   });
 });
 
-// comment slick
-$(document).ready(function() {
-  $('.slick-comment-div').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 3,
-    centerMode:true,
-    variableWidth: true,
-    autoplay:false,
-    // autoplaySpeed:2500,
-    arrows:true,
-    responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
-});
+
 // gallery section
 
 const lightbox = document.createElement('div')
@@ -183,12 +142,49 @@ submit.addEventListener('click', function(){
 const NavBar = document.querySelector(".nav-section");
 
 window.addEventListener('scroll', function() {
-  console.log(window.scrollY);
   if(window.scrollY >600){
     NavBar.style.backgroundColor = "black"
-    console.log(true)
   }else{
     NavBar.style.backgroundColor = "unset"
   }
 });
+
+
+// Area fade in out
+
+let img = false
+
+const AreaBox = document.querySelectorAll(".Area-box");
+const imgClass = document.querySelectorAll('.img');
+
+
+for (let i = 0; i < AreaBox.length; i++) {
+  AreaBox[i].addEventListener("mouseover", function(){
+    for (let index = 0; index < imgClass.length; index++) {
+      imgClass[i].classList.add("fadeOut")
+      imgClass[i].classList.remove('fadeIN')
+    }
+  })
+}
+
+for (let i = 0; i < AreaBox.length; i++) {
+  AreaBox[i].addEventListener("mouseout", function(){
+    for (let index = 0; index < imgClass.length; index++) {
+      imgClass[i].classList.add("fadeIN");
+      imgClass[i].classList.remove('fadeOut');
+    }
+  })
+}
+
+// for (let i = 0; i < AreaBox.length; i++) {
+//   window.addEventListener("scroll", function(){
+//     // console.log(window.scrollY)
+//     var scrolltop = AreaBox[i].getBoundingClientRect();
+//     // console.log(window.scrollY)
+//     if(window.scrollY >= 400 && window.scrollY <= 750){
+//       console.log(true)
+//     }
+//   })
+// }
+
 
