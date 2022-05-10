@@ -34,7 +34,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     centerMode:true,
     variableWidth: true,
-    // autoplay:true,
+    autoplay:true,
     autoplaySpeed:2500,
     arrows:false,
     responsive: [{
