@@ -78,10 +78,6 @@
 /* head section */
 
 .head-section{
-  /* background-image: url('../img/main.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
   position: relative;
 }
 
@@ -91,12 +87,6 @@
   height: 100%;
   width: 100%;
 }
-
-/* @media(max-width:768px){
-  .head-section{
-    background-image: url('../img/responsiveHeader.png');
-  }
-} */
 
 .head-section::before{
   content: '';
@@ -185,9 +175,9 @@
 
 /* slick section 3 */
 
-
-.section-3{
-  /* background-color: black; */
+.news{
+  text-align: center;
+  padding: 20px;
 }
 
 .slick-div {
@@ -205,6 +195,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+@media(max-width:1400px){
+  .section-3 .slick-initialized .slick-slide{
+    height: 350px;
+    width: 350px;
+  }
 }
 
 .slick-div .slick-track{
@@ -262,44 +261,6 @@
   }
 }
 
-/* section-4 */
-
-
-.section-4-text-div{
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-items:flex-end;
-  padding: 20px;
-  text-align: right;
-  margin: 20px auto ;
-}
-
-.section-4-text-div button{
-  padding: 7px 13px;
-  border: 1px solid  white;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-  margin: 25px 0px auto auto;
-}
-
-@media(max-width:768px){
-  .section-4-text-div{
-    align-items: center;
-    text-align: center;
-  }
-  .section-4-text-div button{
-    margin:auto;
-  }
-}
-
-.section-4-text-div h1{
-  margin: 20px 0px 10px;
-}
-.section-4-text-div p{
-  margin: 20px 0px 10px;
-}
 
 /* Area div */
 
@@ -335,7 +296,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -375,13 +336,13 @@
 .fadeOut{
   position: relative !important;
   z-index: 0 !important;
-  opacity: 0.2;
+  opacity: 0;
   animation: fadeOut 1s;
 }
 
 @keyframes fadeOut {
   from {opacity: 1;}
-  to {opacity: 0.2;}
+  to {opacity: 0;}
 }
 
 .product-text{
@@ -391,7 +352,11 @@
 
 /* form  */
 
-.section-8 form{
+.section-4{
+  margin: 40px auto;
+}
+
+.section-4 form{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -413,21 +378,20 @@
 }
 
 .three-div label{
-  width: 25% !important;
+  width: 30% !important;
 }
 
 .three-div label input{
   background-color: white;
   width: 100%;
-  border: none;
+  border: 1px solid black;
   border-radius: 10px;
   color: black;
-  border-bottom: 1px solid black;
   outline: 0 !important;
   padding: 10px;
 }
 
-.section-8 form label {
+.section-4 form label {
   margin: 10px 0px;
   display: flex;
   flex-direction: column;
@@ -435,17 +399,15 @@
   align-items: center;
   width: 100%;
   padding-left: 10px;
-  color: blacks;
+  color: black;
 }
 
-.section-8 form label textarea{
+.section-4 form label textarea{
   height: 150px;
-  width: 90%;
-  border:none;
-  border-bottom: 1px solid black;
+  width: 95%;
+  border:1px solid black;
   background-color: white;
   border-radius: 10px;
-  margin-right: 10px;
   padding: 10px;
   outline: 0 !important;
   color: black;
@@ -465,7 +427,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
+  margin: auto auto 50px auto;
 }
 
 .last-div{
@@ -475,6 +437,10 @@
 }
 
 /* footer */
+
+.footer-section{
+  margin: 40px auto auto auto;
+}
 
 .footer-box ul{
   padding-inline-start: 0px;
@@ -488,3 +454,21 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.footer-box ul li{
+  margin:10px auto;
+}
+
+.footer-box ul li:nth-child(1){
+  font-weight: bold;
+}
+
+.footer-box li span i{
+  width: 20px;
+}
+
+.footer-box li span svg{
+  width: 13px;
+  margin-right: 5px;
+}
+
