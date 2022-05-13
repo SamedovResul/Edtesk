@@ -176,6 +176,8 @@ for (let i = 0; i < AreaBox.length; i++) {
   })
 }
 
+
+
 // for (let i = 0; i < AreaBox.length; i++) {
 //   window.addEventListener("scroll", function(){
 //     // console.log(window.scrollY)
@@ -187,4 +189,6 @@ for (let i = 0; i < AreaBox.length; i++) {
 //   })
 // }
 
+// remove localstorageitem
 
+window.localStorage.removeItem('newsId')

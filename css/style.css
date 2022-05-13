@@ -249,6 +249,11 @@
   margin: 10px;
 }
 
+.product-div button a{
+  color: white;
+  text-decoration: unset;
+}
+
 .product-div p{
   margin: 10px;
 }
@@ -459,7 +464,7 @@
   margin:10px auto;
 }
 
-.footer-box ul li:nth-child(1){
+.contact li:nth-child(1){
   font-weight: bold;
 }
 
@@ -471,4 +476,6 @@
   width: 13px;
   margin-right: 5px;
 }
+
+/* news-page */
 
