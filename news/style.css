@@ -1,5 +1,4 @@
 .nav-section{
-  /* position: fixed; */
   width: 100%;
   padding: 10px 0px;
   z-index: 4;
@@ -70,4 +69,18 @@
     height: 40px;
     color: white !important;
   }
+}
+
+/* News */
+
+.news-box{
+  margin: 20px auto;
+}
+
+.news-box img{
+  width: 40%;
+  margin: auto 20px;
+  height: auto;
+  float: right;
+  border-radius: 10px;
 }

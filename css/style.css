@@ -154,6 +154,12 @@
   padding: 10px ;
   border-radius: 10px;
 }
+
+.icon-div button a{
+  color: white;
+  text-decoration: none;
+}
+
 @media(max-width:768px){
   .icon-div p{
     font-size: x-large;
@@ -370,7 +376,7 @@
   border-radius: 20px;
   border: 2px dashed white;
   background-color: white;
-  margin: 20px auto;
+  margin: 0px auto 10px auto ;
   padding: 20px 0px;
 }
 
@@ -441,6 +447,11 @@
   padding: 20px 0px ; 
 }
 
+.contact-text{
+  margin: auto;
+  text-align: center;
+}
+
 /* footer */
 
 .footer-section{
@@ -476,6 +487,4 @@
   width: 13px;
   margin-right: 5px;
 }
-
-/* news-page */
 
