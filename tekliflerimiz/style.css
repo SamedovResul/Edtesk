@@ -1,3 +1,17 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.offer-nav-section{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 4;
+  background-color: black;
+}
+
 .pricing-box{
   background-color: black;
   width: 90%;
@@ -51,3 +65,12 @@
 .pricing-box div:nth-child(2) ul li  span{
   color: white;
 }
+
+/* footer section */
+
+.offer-footer-section{
+  margin-top: 30px;
+  position: static;
+}
+
+/* @media(max-) */

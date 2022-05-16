@@ -78,9 +78,25 @@
 }
 
 .news-box img{
-  width: 40%;
-  margin: auto 20px;
+  width: 100%;
+  margin: 20px auto;
   height: auto;
-  float: right;
+  
   border-radius: 10px;
 }
+
+.news-footer-section{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+@media(max-width:768px){
+  .news-footer-section{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
+
