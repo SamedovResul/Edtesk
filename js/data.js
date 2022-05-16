@@ -66,3 +66,4 @@ if(id){
   }
 }
 
+const eyyub = 'men Amiraslanov Eyyub iksjsbmen artiq bezdi Alla'

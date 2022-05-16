@@ -178,34 +178,9 @@ for (let i = 0; i < AreaBox.length; i++) {
 
 
 
-for (let i = 0; i < AreaBox.length; i++) {
+if(screen.width <= 991){
+  for (let i = 0; i < AreaBox.length; i++) {
   window.addEventListener("scroll", function(){
-    // console.log(window.scrollY)
-    // var scrolltop = AreaBox[i].getBoundingClientRect();
-    console.log(window.scrollY)
-    // if(window.scrollY >= 300 && window.scrollY <= 500){
-    //     imgClass[0].classList.add("fadeOut");
-    // }else if(window.scrollY >= 500 && window.scrollY <= 700){
-    //   imgClass[0].classList.add("fadeIN");
-    //   imgClass[0].classList.remove('fadeOut');
-    //   imgClass[1].classList.add("fadeOut");
-    // }else if(window.scrollY >= 700 && window.scrollY <= 900){
-    //   imgClass[1].classList.add("fadeIN");
-    //   imgClass[1].classList.remove('fadeOut');
-    //   imgClass[2].classList.add("fadeOut");
-    // }else if(window.scrollY >= 900 && window.scrollY <= 1200){
-    //   imgClass[2].classList.add("fadeIN");
-    //   imgClass[2].classList.remove('fadeOut');
-    //   imgClass[3].classList.add("fadeOut");
-    // }else if(window.scrollY >= 1200){
-    //   imgClass[3].classList.add("fadeIN");
-    //   imgClass[3].classList.remove('fadeOut');
-    // }else{
-    //   imgClass[0].classList.remove('fadeOut');
-    //   imgClass[1].classList.remove('fadeOut');
-    //   imgClass[2].classList.remove('fadeOut');
-    //   imgClass[3].classList.remove('fadeOut');
-    // }
     if(window.scrollY >= 300 && window.scrollY <= 500){
       imgClass[0].classList.add("fadeOut");
     }else if(window.scrollY >= 500 && window.scrollY <= 700){
@@ -250,6 +225,11 @@ for (let i = 0; i < AreaBox.length; i++) {
 
   })
 }
+}
+
+
+
+
 
 // remove localstorageitem
 
