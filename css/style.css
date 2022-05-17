@@ -511,7 +511,10 @@
 
 @media(max-width:567px){
   .footer-box ul li a{
-    font-size: 12px;
+    font-size: 15px;
+  }
+  .footer-box ul{
+    padding: 0px 10px;
   }
 }
 
@@ -524,11 +527,15 @@
 .footer-box p a{
   font-size: 20px;
   font-weight: bold;
+  color: black;
+  text-decoration: unset;
+}
+@media(max-width:567px){
+  .footer-box p a{
+    font-size: 15px;
+  }
 }
 
-.contact li:nth-child(1){
-  font-weight: bold;
-}
 
 .footer-box li span i{
   width: 20px;
@@ -537,5 +544,9 @@
 .footer-box li span svg{
   width: 13px;
   margin-right: 5px;
+}
+
+.contact ul li{
+  margin: 15px auto;
 }
 
