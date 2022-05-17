@@ -75,23 +75,27 @@
 
 .news-box{
   margin: 20px auto;
+  text-align: center;
 }
 
 .news-box img{
-  width: 100%;
+  width: 70%;
   margin: 20px auto;
   height: auto;
-  
   border-radius: 10px;
 }
 
 .news-footer-section{
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
+  margin-top: 50px;
 }
 
-@media(max-width:768px){
+@media(max-width:1300px){
+  .news-footer-section{
+    position: relative;
+    bottom: -25%;
+  }
+}
+@media(max-width:991px){
   .news-footer-section{
     position: fixed;
     bottom: 0px;

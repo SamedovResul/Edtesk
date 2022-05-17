@@ -1,0 +1,30 @@
+.about-section{
+  margin: 20px auto;
+}
+
+
+.about-img-box img{
+  width: 80%;
+  height: auto;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+.about-text-box b{
+  font-size: 20px;
+  margin: 15px;
+}
+
+.about-text-box p{
+  margin: 15px;
+}
+
+
+.about-container .col-md-6:nth-child(3){
+  margin-top: 20px;
+}
+
+.about-container .col-md-6:nth-child(4){
+  margin-top: 20px;
+  text-align: right;
+}

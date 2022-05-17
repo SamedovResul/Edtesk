@@ -37,6 +37,11 @@
   cursor: pointer;
 }
 
+.nav-box ul li a{
+  color: white;
+  text-decoration: unset;
+}
+
 .res-ul{
   display: none;
 }

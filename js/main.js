@@ -233,4 +233,23 @@ if(screen.width <= 991){
 
 // remove localstorageitem
 
-window.localStorage.removeItem('newsId')
+window.localStorage.removeItem('newsId');
+// contact 
+
+const contactNav = document.querySelectorAll('.contact');
+const contactSection = document.getElementById('contact');
+
+
+console.log(contactNav)
+let contact = JSON.parse(window.localStorage.getItem('contact'));
+
+if(contact){
+  contactSection.scrollIntoView();
+  window.localStorage.removeItem('contact')
+}
+
+for (let i = 0; i < contactNav.length; i++) {
+  contactNav[i].addEventListener("click", function(){
+    contactSection.scrollIntoView();
+  })
+}
