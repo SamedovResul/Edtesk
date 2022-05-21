@@ -1,4 +1,14 @@
 
+// main logo 
+
+const mainPage = document.querySelectorAll('.main-page');
+const headSection = document.getElementById('head-section');
+
+for (let i = 0; i < mainPage.length; i++) {
+  mainPage[i].addEventListener("click", function() {
+    headSection.scrollIntoView(0);
+  })
+}
 
 
 let display = false
@@ -68,36 +78,13 @@ $(document).ready(function() {
 });
 
 
-// gallery section
 
-const lightbox = document.createElement('div')
-lightbox.id = 'lightbox'
-document.body.appendChild(lightbox)
-
-const images = document.querySelectorAll('.img')
-images.forEach(image => {
-  image.addEventListener('click', e => {
-    lightbox.classList.add('active')
-    const img = document.createElement('img')
-    img.src = image.src
-    while (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild)
-    }
-    lightbox.appendChild(img)
-  })
-})
-
-lightbox.addEventListener('click', e => {
-  if (e.target !== e.currentTarget) return
-  lightbox.classList.remove('active')
-})
 
 // send email
 
 const Name = document.getElementById('name');
-const surname = document.getElementById('surname');
-const email = document.getElementById('Email');
-const phone = document.getElementById('Phone');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
 const message = document.getElementById('message');
 const submit = document.getElementById('btn');
 
@@ -107,21 +94,20 @@ submit.addEventListener('click', function(){
   
   const data ={
     name:Name.value,
-    surname:surname.value,
     email:email.value,
     phone:phone.value,
     message: message.value
   }
   console.log(data)
   if(re.test(email.value)){
-    if( Name.value && surname.value && phone.value){
+    if( Name.value &&  phone.value){
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://aquaphonics-main-wvoglgccwejru.herokuapp.com/send");
+    // xhttp.open("POST", "https://infinite-castle-76696.herokuapp.com/send");
+    xhttp.open("POST", "https://infinite-castle-76696.herokuapp.com/send");
     xhttp.setRequestHeader("Content-type", 'application/json');
     xhttp.send(JSON.stringify(data));
     alert('Sizinlə əlaqə saxlanılacaq')
     Name.value = ''
-    surname.value = ''
     email.value = ''
     phone.value = ''
     message.value= ''
@@ -237,10 +223,10 @@ window.localStorage.removeItem('newsId');
 // contact 
 
 const contactNav = document.querySelectorAll('.contact');
-const contactSection = document.getElementById('contact');
+const contactSection = document.getElementById('Əlaqə');
 
 
-console.log(contactNav)
+// console.log(contactNav)
 let contact = JSON.parse(window.localStorage.getItem('contact'));
 
 if(contact){
@@ -250,6 +236,7 @@ if(contact){
 
 for (let i = 0; i < contactNav.length; i++) {
   contactNav[i].addEventListener("click", function(){
+    console.log(contactNav)
     contactSection.scrollIntoView();
   })
 }

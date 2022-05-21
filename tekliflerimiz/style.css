@@ -12,6 +12,27 @@ html, body {
   background-color: black;
 }
 
+/* offer section  */
+
+
+.offers-section{
+  margin: 50px auto;
+}
+
+.footer-box ul li{
+  cursor: pointer;
+}
+
+.about-title{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.about-title h4{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 .pricing-box{
   background-color: black;
   width: 90%;
@@ -72,4 +93,3 @@ html, body {
   margin-top: 100px;
 }
 
-/* @media(max-) */

@@ -1,12 +1,28 @@
 .about-section{
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
+.footer-box ul li{
+  cursor: pointer;
+}
+
+.about-title{
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.about-section .col-md-6{
+  margin: 40px auto;
+}
+
+.about-img-box{
+  text-align: center;
+}
 
 .about-img-box img{
   width: 80%;
   height: auto;
-  margin: 15px;
+  margin: auto;
   border-radius: 20px;
 }
 
@@ -27,4 +43,10 @@
 .about-container .col-md-6:nth-child(4){
   margin-top: 20px;
   text-align: right;
+}
+
+@media(max-width:768px){
+  .about-text-box{
+    text-align: center;
+  }
 }

@@ -20,6 +20,11 @@
 }
 .logo-div svg{
   width: 30%;
+  cursor: pointer;
+}
+
+.main-page{
+  cursor: pointer;
 }
 
 .nav-box ul{
@@ -34,6 +39,10 @@
   list-style: none;
   margin: 5px;
   color: white;
+  cursor: pointer;
+}
+
+.contact{
   cursor: pointer;
 }
 
@@ -117,13 +126,7 @@
 
 @media(max-width:768px){
   .icon-div{
-    height: 80vh;
-  }
-}
-
-@media(max-width:567px){
-  .icon-div{
-    height: 70vh;
+    height: 50vh;
   }
 }
 
@@ -181,10 +184,17 @@
   }
 }
 
-/* section-2-text-div */
-
-
 /* slick section 3 */
+
+.section-3{
+  margin: 100px auto;
+}
+
+@media(max-width:768px){
+  .section-3{
+    margin: 50px auto;
+  } 
+}
 
 .news{
   text-align: center;
@@ -202,11 +212,14 @@
   width: 400px;
   margin: auto 10px;
   border: 2px solid black;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 
@@ -283,9 +296,14 @@
 .Area-container{
   padding: 10px 0px;
   height: auto;
+  margin: 100px auto;
 }
 
-
+@media(max-width:768px){
+  .Area-container{
+    margin: 50px auto;
+  }
+}
 
 .Area-box{
   width: 95%;
@@ -385,10 +403,15 @@
   padding: 20px;
 }
 
-/* form  */
-
+/* form */
 .section-4{
-  margin: 40px auto;
+  margin: 100px auto;
+}
+
+@media(max-width:768px){
+  .section-4{
+    margin:50px auto;
+  }
 }
 
 .section-4 form{
@@ -492,6 +515,8 @@
   margin: auto;
   text-align: center;
 }
+
+
 
 /* footer */
 

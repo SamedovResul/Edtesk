@@ -1,3 +1,14 @@
+// offer
+const mainPage = document.querySelectorAll('.offer');
+const headSection = document.getElementById('offer-nav-section');
+
+for (let i = 0; i < mainPage.length; i++) {
+  mainPage[i].addEventListener("click", function() {
+    console.log(mainPage)
+    headSection.scrollIntoView(0);
+  })
+}
+
 let display = false
 
 $(document).ready(function(){
@@ -26,5 +37,7 @@ const contact = "contact"
 const contactNav = document.querySelectorAll('.contact');
 
 for (let i = 0; i < contactNav.length; i++) {
-  window.localStorage.setItem('contact', JSON.stringify(contact));
+  contactNav[i].addEventListener('click', function() {
+    window.localStorage.setItem('contact', JSON.stringify(contact));
+  })
 }
