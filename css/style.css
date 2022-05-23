@@ -147,7 +147,7 @@
   /* height: 270px; */
 }
 
-.icon-div  p{
+.icon-div  h1{
   font-size: xx-large;
   color: white;
 }
@@ -169,7 +169,7 @@
 }
 
 @media(max-width:768px){
-  .icon-div p{
+  .icon-div h1{
     font-size: x-large;
   }
   .icon-div button{
@@ -179,7 +179,7 @@
   }
 }
 @media(max-width:567px){
-  .icon-div p{
+  .icon-div h1{
     font-size: large;
   }
 }
@@ -475,7 +475,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 0px;
   color: black;
 }
 

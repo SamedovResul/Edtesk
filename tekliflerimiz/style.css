@@ -40,11 +40,13 @@ html, body {
   border-radius: 20px;
 }
 
-.pricing-box div:nth-child(1){
-  padding: 10px 0px 0px 20px;
+.pricing-box> div:nth-child(1){
+  padding: 10px 20px 0px 20px;
   border: 2px solid gray;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pricing-box div:nth-child(1) p{
@@ -65,7 +67,12 @@ html, body {
   margin-bottom: 20px;
 }
 
-.pricing-box div:nth-child(2){
+.pricing-box div:nth-child(1) p:nth-child(2) a{
+  color: white;
+  text-decoration: unset;
+}
+
+.pricing-box> div:nth-child(2){
   background-color: black;
   border: 2px solid gray;
   border-bottom-left-radius: 20px;
