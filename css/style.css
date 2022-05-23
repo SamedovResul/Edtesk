@@ -342,6 +342,7 @@
 .Area-box .product-information div:nth-child(2){
   height: auto;
   top: unset;
+  padding: 0px 15px;
 }
 
 .Area-box .product-information div:nth-child(2) p{
@@ -363,15 +364,23 @@
 
 .Area-box .product-information .img{
   width: 100%;
-  height: auto;
+  height: 220px;
   position: relative;
   z-index: 3;
   background-color: white;
 }
 
+.youtubeIcon{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10% !important;
+  height: auto !important;
+}
+
 .Area-box .img img{
   width: 200px;
-  height: 200px;
+  height: auto;
 }
 
 .fadeIN{

@@ -35,6 +35,20 @@
   margin: 15px;
 }
 
+.about-text-box ul{
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.right{
+  text-align: right;
+}
+
+.about-text-box ul li span{
+  margin: 0px 5px;
+}
+
 
 .about-container .col-md-6:nth-child(3){
   margin-top: 20px;
