@@ -94,6 +94,25 @@ html, body {
   color: white;
 }
 
+.contact-Us{
+  padding: 10px 20px;
+  width: 90%;
+  border: 1px solid white;
+  margin: 10px auto 20px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.contact-Us a{
+  color: white;
+  text-decoration: unset;
+}
+
+.contact-Us a:hover{
+  color: white;
+}
+
 /* footer section */
 
 .offer-footer-section{
