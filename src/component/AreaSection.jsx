@@ -20,7 +20,7 @@ const AreaSection = (props) => {
 
           {
             areaData.map((area, i) =>{
-              const {img, desc,title} = area
+              const {img, desc,title,link} = area
               return(
                 <div key={i} className="col-md-6">
                   <div className="Area-box" 
@@ -42,9 +42,9 @@ const AreaSection = (props) => {
                           {desc}
                         </p>
                         <button>
-                          {/* <a href="https://www.youtube.com/channel/UCML2-bEpQ6NFKMIYUew_LBQ" target="_blank"> */}
+                          <a href={link} target="_blank">
                             Daxil ol
-                          {/* </a> */}
+                          </a>
                         </button>
                       </div>
                       
