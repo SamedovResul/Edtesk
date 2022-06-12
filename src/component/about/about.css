@@ -97,3 +97,14 @@
     font-size: 12px;
   }
 }
+
+/*  */
+
+.offer-nav-section{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 4;
+  background-color: black;
+}

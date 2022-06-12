@@ -8,6 +8,14 @@
   z-index: 4;
 }
 
+.offer-nav-section{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 4;
+  background-color: black;
+}
 
 .main-nav-div{
   display: flex;
@@ -18,11 +26,31 @@
 .logo-div{
   color: white;
 }
+
+
+
+/* svg */
+
 .logo-div svg{
   width: 30%;
   cursor: pointer;
 }
 
+
+.k,
+.l{fill:#fff;}
+.m{letter-spacing:.1508em;}
+.n,
+.l{isolation:isolate;}
+.o{letter-spacing:.15324em;}
+.p{letter-spacing:.16301em;}
+.q{letter-spacing:.16299em;}
+.r{letter-spacing:.15568em;}
+.s{letter-spacing:.15812em;}
+.l{font-family:Calibri-Light, Calibri;font-size:36.26604px;}
+
+
+/*  */
 .main-page{
   cursor: pointer;
 }
@@ -46,26 +74,33 @@
   cursor: pointer;
 }
 
-.nav-box ul li a{
+.nav-box a{
+  color: white;
+  text-decoration: unset;
+  margin: 0px 10px;
+}
+
+.nav-box a:hover{
   color: white;
   text-decoration: unset;
 }
 
-.res-ul{
+/* .res-ul{
   display: none;
-}
+} */
 
 .burger-button{
   display: none;
 }
 
+.responsive{
+  display: none;
+}
+
 @media(max-width:768px){
-  .nav-box ul{
-    display: none;
-  }
-  .res-ul{
-    /* display: block; */
-    position: absolute;
+  .responsive{
+    display: block;
+    position: fixed;
     height: 100vh;
     width: 50%;
     top: 0px;
@@ -73,10 +108,10 @@
     background-color: black;
     padding: 15px 30px;
   }
-  .res-ul ul{
+  .nav-box .responsive ul{
     display: block;
   }
-  .res-ul ul li{
+  .nav-box .responsive ul li{
     margin: 20px auto;
   }
   .burger-button{
@@ -207,7 +242,7 @@
   margin: 20px auto;
 }
 
-.section-3 .slick-initialized .slick-slide{
+.section-3 .slick-initialized .slick-slide > div{ 
   height: auto;
   width: 400px;
   margin: auto 10px;
@@ -224,7 +259,7 @@
 
 
 @media(max-width:1400px){
-  .section-3 .slick-initialized .slick-slide{
+  .section-3 .slick-initialized .slick-slide > div{
     height: 350px;
     width: 350px;
   }
@@ -235,19 +270,23 @@
   align-items: center;
 }
 
+.slick-track{
+  width: max-content !important;
+}
 
 
-.section-3 .slick-div div img{
-  width: 300px;
+
+.slick-initialized .slick-slide > div .product-div img{
+  width: 100%;
   height: 180px;
   border-radius: 10px;
   object-fit: cover;
 }
 
-.slick-initialized .slick-slide img{
+/* .slick-initialized .slick-slide > div .product-div img{
   width: 100%;
   height: auto;
-}
+} */
 
 
 .product-div{
@@ -260,9 +299,6 @@
   text-align: center;
 }
 
-.product-div img{
-  margin: 10px;
-}
 
 .product-div button{
   padding: 7px 13px;
@@ -542,9 +578,13 @@
   margin:10px auto;
 }
 
-.footer-box ul li a{
+.footer-box a{
   color: black;
   text-decoration: unset;
+}
+
+.footer-box a:hover{
+  color: black !important;
 }
 
 
