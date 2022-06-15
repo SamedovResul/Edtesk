@@ -67,13 +67,13 @@ const Cv = (props) => {
                 {
                   className ? (
                     <div className={`map ${className} `} >
-                      {/* <Link to={`/${studentName}/certificates`} onClick={() => Studentname(studentName)} > */}
+                      <Link to={`/${studentName}/certificates`} onClick={() => Studentname(studentName)} >
                         Certificates
                       <span></span>
                       <span></span>
                       <span></span>
                       <span></span>
-                      {/* </Link> */}
+                      </Link>
                     </div>
                   ) : (
                   <a href="https://www.google.com/maps/@40.3852627,49.803334,93m/data=!3m1!1e3" target='_blank'>
