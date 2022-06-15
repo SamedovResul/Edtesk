@@ -1,5 +1,5 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+// import { SRLWrapper } from "simple-react-lightbox";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UserParams from '../useParams';
 
@@ -23,7 +23,7 @@ const SectionOne = ({studentData}) => {
     
     console.log(images)
   return (
-    <SRLWrapper>
+    // <SRLWrapper>
       <div className="container">
         <div className="container-fluid">
           <div className="row">
@@ -42,8 +42,7 @@ const SectionOne = ({studentData}) => {
           </div>
         </div>
       </div>
-      {/* <img className="responsive" src={studentData[1].certificates[0].img} alt="test ne isteyirsen"></img> */}
-    </SRLWrapper>
+    // </SRLWrapper>
   )
 }
 
