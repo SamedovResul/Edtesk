@@ -18,11 +18,11 @@ const headerSection = (props) => {
 
   useEffect(() => {
     if(contact){
-      window.scrollTo(0, 2570 )
+      window.scrollTo(0, 2170 )
+
     }else {
       window.scrollTo(0, 0 )
     }
-    console.log(contact)
   }, [contact])
 
   const burgerHandler = () =>{

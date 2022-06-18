@@ -3,7 +3,7 @@ import functions from './functions';
 import toast from 'react-hot-toast';
 import { send } from 'emailjs-com';
 
-const ContactSection = ({myRef}) => {
+const ContactSection = () => {
 
 
   const [contactData, setContactData] = useState({
@@ -12,7 +12,7 @@ const ContactSection = ({myRef}) => {
     phone:"",
     message: ""
   })
-
+  const myRef = useRef(null)
   
 
 

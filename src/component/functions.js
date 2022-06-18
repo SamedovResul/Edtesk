@@ -1,10 +1,10 @@
-import React,{useEffect,useState,useRef} from 'react';
+import React,{useEffect,useState} from 'react';
 import { useSpring, animated, } from 'react-spring';
 
 import Data from '../data'
 const functions = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  
+  const [logoScroll , setLogoScroll] = useState(false)
   const [Class, setClass] = useState({
     className:'',
     index:0
@@ -16,7 +16,7 @@ const functions = () => {
   const [burger, setBurger] = useState(false)
 
 
-  const myRef = useRef(null)
+ 
   
   // nav section
   const handleScroll = () =>  setScrollPosition(window.pageYOffset)
@@ -71,24 +71,29 @@ const functions = () => {
       right:"-50%",
      },
     to: { 
-      right: burger ? "0%" : "-50%",
+      right: burger  ? "0%" : "-50%",
      },
      config: {
 			duration: 350
 		}
   })
+
+  // logo scroll
+
+  
   
   
   return { 
     scrollPosition,
-    myRef,
     Class,
     setClass,
     news, 
     setNews,
     BurgerMenustyles,
     setBurger,
-    burger
+    burger,
+    setLogoScroll,
+    logoScroll
    }
 }
 

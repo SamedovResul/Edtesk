@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
+import { FaInstagram,FaFacebook,FaYoutube } from 'react-icons/fa';
+
 
 const FooterSction = ({setContact}) => {
   
@@ -62,15 +64,15 @@ const FooterSction = ({setContact}) => {
             <div className="footer-box contact">
               <p><a href="https://api.whatsapp.com/send?phone=994559450412">+994 55 945 04 12</a></p>
               <ul>
-                <li> <span><i className="fa fa-instagram"></i></span> <a href="https://www.instagram.com/wakemeuptechnology/" target="_blank">@entesk</a> </li>
-                <li> <span><i className="fa fa-facebook"></i></span> <a href="https://www.facebook.com/wakemeup.az" target="_blank">@entesk</a> </li>
-                <li> <span><i className="fa fa-youtube"></i></span> <a href="https://www.youtube.com/channel/UCOQ9ZUuSBi8oW_uR_V5srFw" target="_blank">@entesk</a></li>
+                <li> <span> <FaInstagram/> </span> <a href="https://www.instagram.com/wakemeuptechnology/" target="_blank">@entesk</a> </li>
+                <li> <span> <FaFacebook/> </span> <a href="https://www.facebook.com/wakemeup.az" target="_blank">@entesk</a> </li>
+                <li> <span> <FaYoutube/> </span> <a href="https://www.youtube.com/channel/UCOQ9ZUuSBi8oW_uR_V5srFw" target="_blank">@entesk</a></li>
               </ul>
             </div>
           </div>
           <div className="col-md-12">
             <div className="last-div">
-              Bütün hüquqlar qorunur 
+              © Bütün hüquqlar qorunur 
             </div>
           </div>
         </div>

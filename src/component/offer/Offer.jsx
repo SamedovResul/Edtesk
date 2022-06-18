@@ -24,11 +24,11 @@ const Offer = ({setContact}) => {
               <div>
                 <div>
                   <p>Wakemeup</p> 
-                  <p>Technical support</p>
+                  <p>Texniki Dəstək</p>
                 </div>
                 <div>
-                  <p>129$ /device</p> 
-                  <p>2%$ /device</p>
+                  <p>129$ /Cihaz</p> 
+                  <p>2%$ /Cihaz</p>
                 </div>
               </div>
               <div>
@@ -53,11 +53,11 @@ const Offer = ({setContact}) => {
               <div>
                 <div>
                   <p>Metatesk</p> 
-                  <p>Resources + Teachers</p>
+                  <p>Resurslar + Müəlimlər</p>
                 </div>
                 <div>
-                  <p>10$ /class</p> 
-                  <p>Included</p>
+                  <p>10$ /dərs</p> 
+                  <p>daxildir</p>
                 </div>
               </div>
               <div>
@@ -82,7 +82,7 @@ const Offer = ({setContact}) => {
               <div>
                 <div>
                   <p>Enthouse</p> 
-                  <p>Advanced IoT</p>
+                  <p>Qabaqcıl IoT</p>
                 </div>
                 <div>
                   <p>59$ /  m<sup>2</sup></p> 
@@ -110,12 +110,12 @@ const Offer = ({setContact}) => {
             <div className="pricing-box">
               <div>
                 <div>
-                  <p>Pika Mini Series</p> 
-                  <p>Free for non-commercial use</p>
+                  <p>Pika Mini Seriaları</p> 
+                  <p>Ödənişsiz qeyri-kommersiya məqsədi istifadə üçün</p>
                 </div>
                 <div>
-                  <p>Free</p> 
-                  <p className="contact" > <a href="../index.html">Contact Us</a> </p>
+                  <p>Ödənişsiz</p> 
+                  <p className="contact" > Bizimlə əlaqə </p>
                 </div>
               </div>
               <div>

@@ -17,7 +17,7 @@ import Gallery from "./component/studentsCv/studentsCertificate/gallery"
 const App = (props) => {
 
   // const { name } = useParams();
-
+  const [contact, setContact] = useState(false)
 
   const {
     style,
@@ -32,7 +32,7 @@ const App = (props) => {
 
 
   let Name 
-  const [contact, setContact] = useState(false)
+  
   studentData.map((subject) =>{
     const {studentName} = subject
 
