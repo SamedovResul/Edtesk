@@ -45,7 +45,7 @@ const FooterSction = ({setContact}) => {
                 <li> <a href="https://wakemeup-az.vercel.app/">Wakemeup</a> </li>
                 <li> <a href="https://entesk.com/">Metatesk</a> </li>
                 <li> <a href="https://www.enteskedu.com/">Enthouse</a> </li>
-                <li> <a href="https://www.youtube.com/channel/UCML2-bEpQ6NFKMIYUew_LBQ/featured">Pika</a> </li>
+                <li> <a href="https://www.youtube.com/channel/UCML2-bEpQ6NFKMIYUew_LBQ/featured">Enteskkids</a> </li>
               </ul>
             </div>
           </div>
@@ -55,7 +55,6 @@ const FooterSction = ({setContact}) => {
               <ul>
                 <li>Bakı ş. Yasamal r.</li>
                 <li>A. M. Şərifzadə küç. 237 A</li>
-                <li>M. İnşaatçilar yaxınlığı</li>
                 <li>contact@enteskedu.com </li>
               </ul>
             </div>
