@@ -66,7 +66,7 @@ const ContactSection = () => {
             <form action="">
               <div className="three-div">
                 <label htmlFor="name"> Ad:
-                  <input id="name" value={contactData.name}   type="text" onChange={(e) => setContactData({
+                  <input id="name" value={contactData.name}    type="text" onChange={(e) => setContactData({
                     ...contactData, name:e.target.value
                   })}  required />
                 </label>

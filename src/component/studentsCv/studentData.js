@@ -287,7 +287,6 @@ export const studentData = [
     resBackImg:"/images/raulbackphone.jpg",
     className:"raul"
   },
-  // new 
   {
     studentName:"shraul16",
     frontImg:"/images/raulfront.png",
@@ -295,4 +294,50 @@ export const studentData = [
     resBackImg:"/images/raulbackphone.jpg",
     className:"raul"
   },
+  // new
+
+  {
+    studentName:"qafarid26",
+    frontImg:"/images/raulfront.png",
+    backImg:"/images/raulback.jpg",
+    resBackImg:"/images/raulbackphone.jpg",
+    className:"raul"
+  },
+  {
+    studentName:"astamerlan08",
+    frontImg:"/images/raulfront.png",
+    backImg:"/images/raulback.jpg",
+    resBackImg:"/images/raulbackphone.jpg",
+    className:"raul"
+  },
+  {
+    studentName:"haalif10",
+    frontImg:"/images/raulfront.png",
+    backImg:"/images/raulback.jpg",
+    resBackImg:"/images/raulbackphone.jpg",
+    className:"raul"
+  },
+
+  {
+    studentName:"hakhadija13",
+    frontImg:"/images/raulfront.png",
+    backImg:"/images/raulback.jpg",
+    resBackImg:"/images/raulbackphone.jpg",
+    className:"raul"
+  },
+  {
+    studentName:"jahasan09",
+    frontImg:"/images/raulfront.png",
+    backImg:"/images/raulback.jpg",
+    resBackImg:"/images/raulbackphone.jpg",
+    className:"raul"
+  },
+  {
+    studentName:"hajacafarsadig24",
+    frontImg:"/images/raulfront.png",
+    backImg:"/images/raulback.jpg",
+    resBackImg:"/images/raulbackphone.jpg",
+    className:"raul"
+  },
+
 ]
