@@ -333,7 +333,7 @@ export const studentData = [
     className:"raul"
   },
   {
-    studentName:"hajacafarsadig24",
+    studentName:"Jajacafarsadig24",
     frontImg:"/images/raulfront.png",
     backImg:"/images/raulback.jpg",
     resBackImg:"/images/raulbackphone.jpg",
