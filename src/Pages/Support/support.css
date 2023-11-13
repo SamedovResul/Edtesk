@@ -1,0 +1,76 @@
+.support-page{
+    background-color: #f4f5f9;
+
+}
+.support-page .section-one{
+    padding: 60px 0;
+}
+.support-page .section-one .support-container .support-header{
+    text-align: center;
+}
+.support-page .section-one .support-container .support-header h5{
+    color: #0c5adb;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+.support-page .section-one .support-container .support-header p{
+    font-size: 40px;
+    font-weight: 800;
+    color: #232323;
+}
+.support-page .section-one .support-container .support-cards{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-top: 40px;
+}
+.support-page .section-one .support-container .support-cards .support-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.support-page .section-one .support-container .support-cards .support-card img{
+    width: 100%;
+}
+.support-page .section-one .support-container .support-cards .support-card .user-about{
+    background: #1c1c24;
+    padding: 20px 18px 25px 28px;
+    margin: 0;
+    position: relative;
+    border-left: 3px solid #0c5adb;
+
+}
+.support-page .section-one .support-container .support-cards .support-card .user-about:hover{
+    background-color: #0c5adb;
+    transition: .3s;
+
+}
+.support-page .section-one .support-container .support-cards .support-card .user-about h2{
+    color: white;
+    font-size: 22px;
+}
+.support-page .section-one .support-container .support-cards .support-card .user-about span{
+    color: white;
+    display: inline-block;
+    margin-top: 8px;
+}
+@media screen and (max-width:1200px) {
+    .support-page .section-one .support-container .support-cards{
+        grid-template-columns: repeat(2,auto);
+        justify-content: center;
+    }
+    .support-page .section-one .support-container .support-cards .support-card{
+        width: 350px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .support-page .section-one .support-container .support-cards{
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+}
+
