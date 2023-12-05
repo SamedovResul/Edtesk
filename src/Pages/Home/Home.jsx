@@ -7,6 +7,7 @@ import SectionThree from "./Sections/Section_Three"
 const Home = () => {
   return (
     <div className='home-page' id="home" >
+      <h1> Tezlik </h1>
         <SectionOne/>
         <SectionTwo/>
         <SectionThree/>
