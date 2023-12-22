@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/entesk.png";
 import ScrollLogo from "../../assets/scroll-logo.png"
 import MenuIcon from "../../assets/Menu Icon.svg"
 import CloseIcon from "../../assets/x-close.svg"
@@ -24,12 +24,12 @@ const Header = () => {
   }, []);
   return (
     <>
-    <div className={`header ${scroll ? "scrolled" : ""} `}>
+    <div className='header'>
       <div className="container">
         <div className="header-container">
           <div className="header-icon">
             {scroll ? 
-            <img src={ScrollLogo} alt="logo" />
+            <img src={Logo} alt="logo" />
             :
             <img src={Logo} alt="logo" />
             }
@@ -55,7 +55,6 @@ const Header = () => {
                 <a href="#blog">Blog</a>
               </li>
             </ul>
-            <button className="get-started">Get started</button>
           </nav>
         </div>
         <div className="header-mobile-container">

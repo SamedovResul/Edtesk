@@ -3,12 +3,13 @@
 }
 .demo-page .section-one{
     background: linear-gradient(to top, #f4f5f9, #f4f5f9, #fbfbfd, #fff, #fff);
-
+  padding: 60px 0px;
 }
 .demo-page .section-one .demo-header {
   text-align: center;
 }
 .demo-page .section-one .demo-header h2 {
+  margin: 60px auto;
   font-size: 40px;
   font-weight: 700;
 }
@@ -37,12 +38,17 @@
   grid-template-columns: repeat(3, auto);
   text-align: center;
 }
+
 .demo-page .section-one .demo-cards .card-container {
-  margin: 10px 0;
+  margin: 20px 30px;
 }
+
 .demo-page .section-one .demo-cards .card-container img {
-  width: 350px;
-  height: 350px;
+  width: 60%;
+  border-radius: 10px;
+  height: 60;
+  object-fit:contain;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .demo-page .section-one .demo-cards .card-container p {
   font-size: 24px;
@@ -69,7 +75,7 @@
 }
 .demo-page .section-two .design-container .design-context h4 {
   color: #0c5adb;
-  font-size: 15px;
+  font-size: 35px;
   font-weight: 800;
   margin-bottom: 10px;
 }
@@ -94,13 +100,17 @@ font-weight: 400;
 
 
 .demo-page .section-two .design-container .design-img{
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
 }
 
-
-
 .demo-page .section-two .design-container .design-img img {
-  width: 100%;
+  margin: auto;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 @media screen and (max-width: 1200px) {

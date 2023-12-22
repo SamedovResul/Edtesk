@@ -1,5 +1,5 @@
 import React from "react";
-import DesignImg from "../../../assets/design.jpeg"
+import DesignImg from "../../../assets/first.png"
 
 const SectionTwo = () => {
   return (

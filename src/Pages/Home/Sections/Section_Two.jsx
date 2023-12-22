@@ -1,16 +1,27 @@
 import React from 'react'
-import HTMLImg from "../../../assets/f14.png"
-import CSSImg from "../../../assets/f15.png"
-import JSImg from "../../../assets/f16.png"
-import RESPONSIVEImg from "../../../assets/rsp.png"
+import img1 from "../../../assets/react.png"
+import img2 from "../../../assets/nodejs.png"
+import img3 from "../../../assets/python.png"
+
+import Cards from './cardData.jsx/cards'
 
 
 const SectionTwo = () => {
     const cardsData=[
-        {id:1,text:"HTML",img:HTMLImg},
-        {id:2,text:"CSS",img:CSSImg},
-        {id:3,text:"JQUERY",img:JSImg},
-        {id:4,text:"FULLY RESPONSIVE",img:RESPONSIVEImg},
+        {id:1,title: <h5>20 +</h5>, desc: <p>Successfully <br /> completed projects</p> , img:[]},
+        {id:2,title: <h5>30 +</h5>,desc: <p>Our IT team brings their expertise and knowledge to projects to ensure the best possible outcomes.</p> ,img:[]},
+        {id:3,title: <h5>3</h5>,desc: <p>Our offices in different cities</p>,img:[]},
+        {id:4,title: <h5>Technologies</h5>,desc:"",img:[
+        {
+            img:img1
+        },
+        {
+            img:img2
+        },
+        {
+            img:img3
+        }
+    ]},
     ]
   return (
     <div className='section-two'>
@@ -18,8 +29,9 @@ const SectionTwo = () => {
             <div className="cards">
                 {cardsData.map(card=>(
                     <div key={card.id} className="card">
-                        <img src={card.img} alt="" />
-                        <h5>{card.text}</h5>
+                        {card.title}
+                        {card.desc}
+                        {card.img.length > 0 && <Cards img={card.img} />}
                     </div>
                 ))}
             </div>

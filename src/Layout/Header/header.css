@@ -20,6 +20,13 @@
     align-items: center;
 
 }
+
+.header .header-container .header-icon img{
+    width: 35%;
+    height: auto;
+}
+
+
 .header .header-container .navbar-list{
     display: flex;
     align-items: center;

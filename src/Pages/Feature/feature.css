@@ -7,16 +7,17 @@
 }
 .feature-page .section-one .feature-header{
     text-align: center;
+    margin: 60px auto;
 }
 
 .feature-page .section-one .feature-header h5 {
     color: #0c5adb;
-    font-size: 15px;
+    font-size: 35px;
     font-weight: 800;
 }
 
 .feature-page .section-one .feature-header p {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 800;
     color: #232323;
 }
@@ -26,6 +27,23 @@
     grid-template-columns: repeat(4,auto);
     margin-top: 40px;
 }
+
+.feature-page .section-one .feature-cards ul{
+    list-style: none;
+    margin: 20px;
+}
+
+.feature-page .section-one .feature-cards ul li{
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.feature-page .section-one .feature-cards ul p{
+    margin: 10px auto 10px 0px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
 .feature-page .section-one .feature-cards .feature-card {
     border: 1px solid #eeeeee;
     padding: 20px;
