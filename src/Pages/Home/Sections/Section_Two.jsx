@@ -13,21 +13,25 @@ const SectionTwo = () => {
         {id:3,title: <h5>3</h5>,desc: <p>Our offices in different cities</p>,img:[]},
         {id:4,title: <h5>Technologies</h5>,desc:"",img:[
         {
+            id:1,
             img:img1
         },
         {
+            id:2,
             img:img2
         },
         {
+            id:3,
             img:img3
         }
-    ]},
+            ]},
     ]
   return (
     <div className='section-two'>
         <div className="container">
             <div className="cards">
                 {cardsData.map(card=>(
+                    
                     <div key={card.id} className="card">
                         {card.title}
                         {card.desc}

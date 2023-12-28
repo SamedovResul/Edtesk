@@ -27,6 +27,11 @@
 }
 
 
+.header .header-mobile-container .header-icon img{
+    width: 45%;
+    height: auto;
+}
+
 .header .header-container .navbar-list{
     display: flex;
     align-items: center;

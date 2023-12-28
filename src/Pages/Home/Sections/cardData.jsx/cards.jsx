@@ -5,7 +5,7 @@ import "swiper/css";
 const cards = ({img}) => {
 
 
-  console.log(img)
+  // console.log(img)
 
   return (
     <div  >
@@ -16,11 +16,12 @@ const cards = ({img}) => {
         modules={[Autoplay, Pagination, Navigation]} 
         className="mySwiper">
         {
-          img.map((data) =>
-            { 
-
+          img.map((data) =>{ 
+            console.log(data.id)
             return (
-              <SwiperSlide> <img style={{width:"40%"}} src={data.img} alt="" /></SwiperSlide>
+              <div key={data.id}>
+              <SwiperSlide> <img  style={{width:"40%"}} src={data.img} alt="" /> </SwiperSlide>
+              </div>
             )
           })
         }

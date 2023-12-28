@@ -58,7 +58,9 @@ const Header = () => {
           </nav>
         </div>
         <div className="header-mobile-container">
-            <h2>Techno</h2>
+          <div className="header-icon">
+            <img src={Logo} alt="logo" />
+          </div>
             <div className="menu-icon" onClick={()=>setOpenMenu(!openMenu)} >
               {openMenu ?
               <img src={CloseIcon} alt="/" />

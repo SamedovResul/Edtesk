@@ -14,10 +14,10 @@ const SectionOne = () => {
         {id:2,title:"Educational Solutions",des:[
           {txt:"CRM web apps for courses, schools, and kindergartens."},
         ]},
-        {id:2,title:"Hospitality Solutions",des:[
-          {txt:"CRM web apps for courses, schools, and kindergartens."},
+        {id:3,title:"Social Solutions",des:[
+          {txt:"Automated systems and solutions to help nonprofits run more efficiently and track the work they do."},
         ]},
-        {id:2,title:"Technical Problem Solving",des:[
+        {id:4,title:"Technical Problem Solving",des:[
           {txt:"Emphasize a section or page that highlights your expertise in solving various IT-related technical problems across different industries."},
         ]},
     ]
