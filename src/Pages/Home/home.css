@@ -41,6 +41,7 @@
     font-size: 60px;
     color: white;
     line-height: 140%;
+    font-weight: 800 !important ;
 }
 
 .home-page .section-one .content h1 span{
