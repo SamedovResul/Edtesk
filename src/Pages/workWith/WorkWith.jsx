@@ -1,5 +1,5 @@
 import React from 'react'
-import "./support.css"
+import "./WorkWith.css"
 import SectionOne from './Sections/Section_One'
 
 const Support = () => {

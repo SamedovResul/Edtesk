@@ -1,49 +1,71 @@
 import React from "react";
 import "../feature.css";
-import HTMLImg from "../../../assets/f14.png"
-import CSSImg from "../../../assets/f15.png"
-import JSImg from "../../../assets/f16.png"
-import RESPONSIVEImg from "../../../assets/rsp.png"
+import logo1 from '../../../assets/technical.png'
+import security from '../../../assets/security.png'
+import infrastructure from '../../../assets/infrasftructure.png'
+import Complicated from '../../../assets/complicatedPro.png'
+import webdev from '../../../assets/webdev.png'
+import appDev from '../../../assets/appdev.png'
+import automotion from '../../../assets/Automation.png'
+import startUp from '../../../assets/startUp.png'
+import hardware from '../../../assets/hardware.png'
 
 const SectionOne = () => {
     const cardData=[
-        {id:1,title:" Corporate Solutions  ",des:[
-          {txt:"Website development for small and large companies."},
-          {txt:'ERP solutions for corporate organizations.'}
-        ]},
-        {id:2,title:"Educational Solutions",des:[
-          {txt:"CRM web apps for courses, schools, and kindergartens."},
-        ]},
-        {id:3,title:"Social Solutions",des:[
-          {txt:"Automated systems and solutions to help nonprofits run more efficiently and track the work they do."},
-        ]},
-        {id:4,title:"Technical Problem Solving",des:[
-          {txt:"Emphasize a section or page that highlights your expertise in solving various IT-related technical problems across different industries."},
-        ]},
+      {
+        desc:"Hər Növ Veb Saytlar",
+        img:webdev
+      },
+      {
+        desc:"Mobil Tətbiqlərin Hazırlanması",
+        img:appDev
+      },
+      {
+        desc:"Mürəkkəb İdarə Etmə Sistemləri",
+        img:Complicated
+      },
+      {
+        desc:"Biznesin Avtomatlaşdırması Sistemləri",
+        img:automotion
+      },
+      {
+        desc:"Tam İT İnfrastruktur",
+        img:infrastructure
+      },
+      {
+        desc:"Təhlükəsizlik",
+        img:security
+      },
+      {
+        desc:"StartUplara Dəstək",
+        img:startUp
+      },
+      {
+        desc:"Texniki Dəstək",
+        img:logo1
+      },
+      {
+        desc:"Hər Növ Cihazların Hazırlanması",
+        img:hardware
+      },
     ]
   return (
     <div className="section-one">
       <div className="container">
         <div className="feature-header">
-          <h5>CORE SOLUTIONS</h5>
-          <p>Continuously enhance our IT solutions for diverse businesses by incorporating additional features to meet evolving needs.</p>
+          <h5>Fəaliyyət İstiqamətlərimiz</h5>
+          <p>  </p>
         </div>
         <div className="feature-cards">
             {
               cardData.map((data) =>{
-
+                const {desc,img} = data
 
                 return(
-                  <ul key={data.id}>
-                    <p> {data.title} </p>
-                    {
-                      data.des.map((des,i) =>{
-                        return(
-                          <li key={i}> {des.txt} </li>
-                          )
-                        })
-                    }
-                  </ul>
+                  <div >
+                    <p> {desc} </p>
+                    <img src={img} alt="" />
+                  </div>
                 )
               })
             }

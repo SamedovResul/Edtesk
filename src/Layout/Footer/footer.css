@@ -12,9 +12,8 @@
 
 }
 
-.footer .footer-container .footer-header h2 {
-  font-size: 42px;
-  font-weight: 800;
+.footer .footer-container .footer-header h2 img {
+  width: 15%;
 }
 
 .footer .footer-container .footer-header h4 {

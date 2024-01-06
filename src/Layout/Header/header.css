@@ -17,7 +17,14 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items:baseline;
+
+}
+
+/* f */
+
+.header .header-container .contact p{
+    color: #462aff;
 
 }
 
@@ -35,6 +42,7 @@
 .header .header-container .navbar-list{
     display: flex;
     align-items: center;
+    margin: 0px auto 0px 40px;
 }
 .header .header-container .navbar-list ul{
     display: flex;

@@ -6,9 +6,11 @@ const SectionOne = () => {
     <div className='section-one'>
         <div className="container">
             <div className="content">
-              <h1>  <span> IT and Web solutions  </span><br /> for your business </h1>
-              <p>We create websites with complex logic, mobile applications, personal accounts and integrate with other systems. We create automation systems within the business...</p>
-              <p> contact@enteskedu.com </p>
+              <h1>   Biznesiniz üçün <br /> <span>İT və Veb</span>həllər  </h1>
+              <p> Biz mürəkkəb məntiqli idarə etmə sistemləri, veb saytlar, mobil tətbiqlər, ağıllı cihazlar və digər kompleks həllər
+                həyata keçirdirik. <br /> Startup mərhələsindən böyük korporativ şirkətlərə qədər hər növ İT 
+                həlləri təklif edirik. </p>
+              <p> contact@entesk.com </p>
             </div>
         </div>
     </div>

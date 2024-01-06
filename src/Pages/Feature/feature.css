@@ -23,25 +23,33 @@
 }
 
 .feature-page .section-one .feature-cards{
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.feature-page .section-one .feature-cards ul{
+.feature-page .section-one .feature-cards div{
     list-style: none;
     margin: 20px;
+    padding: 30px 0px 10px 0px;
+    width:25%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c5adb;
 }
 
-.feature-page .section-one .feature-cards ul li{
-    margin: 10px auto;
+.feature-page .section-one .feature-cards div p {
     font-size: 20px;
+    font-weight: 800;
+    color: white;
 }
 
-.feature-page .section-one .feature-cards ul p{
-    margin: 10px auto 10px 0px;
-    font-size: 25px;
-    font-weight: 800;
+.feature-page .section-one .feature-cards div img {
+    width: 30%;
+    margin: 20px;
 }
 
 .feature-page .section-one .feature-cards .feature-card {

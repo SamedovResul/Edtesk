@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
-import Logo from "../../assets/entesk.png";
+import Logo from "../../assets/enteskgrouplogo.png";
 import ScrollLogo from "../../assets/scroll-logo.png"
 import MenuIcon from "../../assets/Menu Icon.svg"
 import CloseIcon from "../../assets/x-close.svg"
@@ -37,25 +37,28 @@ const Header = () => {
           <nav className="navbar-list">
             <ul>
               <li>
-                <a href="#home">Home</a>
+                <a href="#home">Əsas</a>
               </li>
               <li>
-                <a href="#demo">Demo</a>
+                <a href="#demo"> Portfolio </a>
               </li>
               {/* <li>
                 <a href="#inner">Inner Pages</a>
               </li> */}
               <li>
-                <a href="#support">Support</a>
+                <a href="#support"> Haqqımızda </a>
               </li>
               <li>
-                <a href="#feature">Feature</a>
+                <a href="#feature">Xidmətlər</a>
               </li>
               <li>
-                <a href="#blog">Blog</a>
+                <a href="#blog">Əlaqə</a>
               </li>
             </ul>
           </nav>
+          <div className="contact" >
+              <p> +994 55 660 91 55 </p>
+          </div>
         </div>
         <div className="header-mobile-container">
           <div className="header-icon">
@@ -78,22 +81,22 @@ const Header = () => {
         <nav className="navbar-mobile">
             <ul>
               <li>
-                <a href="#home">Home</a>
+                <a href="#home">Əsas</a>
               </li>
               <li>
-                <a href="#demo">Demo</a>
+                <a href="#demo"> Portfolio </a>
               </li>
               {/* <li>
                 <a href="#inner">Inner Pages</a>
               </li> */}
               <li>
-                <a href="#support">Support</a>
+                <a href="#support"> Haqqımızda </a>
               </li>
               <li>
-                <a href="#feature">Feature</a>
+                <a href="#feature">Xidmətlər</a>
               </li>
               <li>
-                <a href="#blog">Blog</a>
+                <a href="#blog">Əlaqə</a>
               </li>
             </ul>
             </nav>

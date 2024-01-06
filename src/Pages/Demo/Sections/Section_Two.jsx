@@ -7,18 +7,18 @@ const SectionTwo = () => {
       <div className="container">
         <div className="design-container">
           <div className="design-context">
-            <h4>BEST UI/UX</h4>
-            <h2>No Compromising With Quality</h2>
+            <h4>Ən yaxşı UI/UX</h4>
+            <h2> Bazar tələbinə uyğun innovativ dizayn </h2>
             <div className="design-content">
-              <h5>Elevating Experiences</h5>
+              <h5> Müştəri tələbi </h5>
               <p>
-                Unmatched UI/UX Design with Uncompromising Quality .
+                İlk öncə müştəri tələbini diqqətlə dinləyirik.
               </p>
             </div>
             <div className="design-content">
-              <h5>Excellence Redefined</h5>
+              <h5> Unikal təklif  </h5>
               <p>
-                Unrivaled UI/UX Craftsmanship with a Commitment to Quality
+                Daha sonra tələbə uyğun  özəl və unikal həll təklif edirik.
               </p>
             </div>
           </div>

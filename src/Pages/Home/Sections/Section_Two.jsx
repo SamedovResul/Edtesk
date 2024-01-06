@@ -2,16 +2,34 @@ import React from 'react'
 import img1 from "../../../assets/react.png"
 import img2 from "../../../assets/nodejs.png"
 import img3 from "../../../assets/python.png"
+import homeimg from '../../../assets/homeImg.jpg'
+import homeimg2 from '../../../assets/homeImg2.jpg'
+import homeimg3 from '../../../assets/homeImg3.jpg'
 
 import Cards from './cardData.jsx/cards'
 
 
 const SectionTwo = () => {
     const cardsData=[
-        {id:1,title: <h5>20 +</h5>, desc: <p>Successfully <br /> completed projects</p> , img:[]},
-        {id:2,title: <h5>30 +</h5>,desc: <p>Our IT team brings their expertise and knowledge to projects to ensure the best possible outcomes.</p> ,img:[]},
-        {id:3,title: <h5>3</h5>,desc: <p>Our offices in different cities</p>,img:[]},
-        {id:4,title: <h5>Technologies</h5>,desc:"",img:[
+        {id:1,title: <h5>20 +</h5>, desc: <p> Uğurla tamamlanmış layihələr </p> , img:[
+            {
+                id:1,
+                img:homeimg2
+            },
+        ]},
+        {id:2,title: <h5>15 +</h5>,desc: <p> İxtisaslı komanda üzvləri </p> ,img:[
+            {
+                id:1,
+                img:homeimg3
+            },
+        ]},
+        {id:3,title: <h5>30 +</h5>,desc: <p> Yerli və beynəlxalq mükafatlar və nişanlar </p>,img:[
+            {
+                id:1,
+                img:homeimg
+            },
+        ]},
+        {id:4,title: <h5>10 + </h5>,desc:  <p> Texnologiyalar</p> ,img:[
         {
             id:1,
             img:img1
@@ -35,7 +53,11 @@ const SectionTwo = () => {
                     <div key={card.id} className="card">
                         {card.title}
                         {card.desc}
-                        {card.img.length > 0 && <Cards img={card.img} />}
+                        {
+                        card.img.length > 1 ? 
+                        <Cards img={card.img} /> :
+                        ( <img src={card.img[0].img} alt="" /> )
+                    }
                     </div>
                 ))}
             </div>
