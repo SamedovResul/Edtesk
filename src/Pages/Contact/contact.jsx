@@ -5,7 +5,7 @@ import SectionOne from './Sections/sectionOne'
 
 const Contact = () => {
   return (
-    <div className='contactPage'>
+    <div className='contactPage' id='contact'>
       <SectionOne/>
     </div>
   )

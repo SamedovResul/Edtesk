@@ -1,17 +1,13 @@
-
-.contactPage{
-  background-color: #0c5adb;
+.contactPage {
+  /* background-color: #0c5adb; */
+  background-color: #462aff;
 }
 
-
-.contactPage .container{
-  width: 90%;
+.contactPage .contact-container {
   display: flex;
-  margin: auto;
-  position: relative;
 }
 
-.contactPage .mapBox{
+.contactPage .mapBox {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -19,39 +15,38 @@
   padding: 30px 0px 0px 0px;
 }
 
-.contactPage .mapBox .textBox{
+.contactPage .mapBox .textBox {
   width: 90%;
   margin: auto auto 20px auto;
 }
 
-.contactPage .mapBox .textBox p{
+.contactPage .mapBox .textBox p {
   color: white;
 }
 
-.contactPage .mapBox .textBox p:nth-of-type(1){
+.contactPage .mapBox .textBox p:nth-of-type(1) {
   font-size: 30px;
   margin: 10px auto;
 }
 
-.contactPage .mapBox .textBox p:nth-of-type(2){
+.contactPage .mapBox .textBox p:nth-of-type(2) {
   font-size: 20px;
   margin: 10px auto 50px auto;
 }
 
-.contactPage .mapBox .textBox p,p:nth-of-type(3){
+.contactPage .mapBox .textBox p,
+p:nth-of-type(3) {
   font-size: 25px;
   margin: 10px auto;
 }
 
-
-.contactPage .mapBox iframe{
+.contactPage .mapBox iframe {
   width: 90%;
   margin: 20px auto;
   border-radius: 10px;
-  
 }
 
-.contactPage .formBox{
+.contactPage .formBox {
   width: 50%;
   box-shadow: 0 0 100px rgb(0 0 0 / 10%);
   /* position: absolute; */
@@ -59,25 +54,24 @@
   margin-top: -150px;
 }
 
-.contactPage .formBox > div{
+.contactPage .formBox > div {
   background-color: white;
   padding: 25px 0px 25px 0px;
 }
 
-.contactPage .formBox div p{
+.contactPage .formBox div p {
   width: 90%;
   margin: auto;
   font-size: 25px;
 }
 
-.contactPage .formBox div > form{
+.contactPage .formBox div > form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-.contactPage .formBox div > form input{
+.contactPage .formBox div > form input {
   width: 90%;
   margin: 10px auto;
   padding: 15px;
@@ -85,27 +79,24 @@
   border: none;
   background-color: aliceblue;
   outline: 0;
-}  
+}
 
-.contactPage .formBox div > form input::placeholder{
+.contactPage .formBox div > form input::placeholder {
   color: black;
   font-size: 14px;
 }
 
-.contactPage .formBox div > form span{
+.contactPage .formBox div > form span {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.contactPage .formBox
- div >
-form span 
-input{
+.contactPage .formBox div > form span input {
   width: 40%;
 }
 
-.contactPage .formBox div > form textarea{
+.contactPage .formBox div > form textarea {
   width: 90% !important;
   height: 150px !important;
   background-color: aliceblue;
@@ -113,17 +104,38 @@ input{
   padding: 20px 0px 0px 15px;
 }
 
-.contactPage .formBox div > form textarea::placeholder{
+.contactPage .formBox div > form textarea::placeholder {
   color: black;
   font-size: 14px;
 }
 
-.contactPage .formBox div > form input[type=submit]{
+.contactPage .formBox div > form input[type="submit"] {
   background-color: #0c5adb;
-  padding:20px ;
+  padding: 20px;
   color: white;
   font-size: 25px;
   margin: 40px auto;
   border-radius: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactPage .mapBox {
+    width: 100%;
+  }
+  .contactPage .mapBox .textBox{
+    width: 100%;
+    text-align: center;
+  }
+  .contactPage .mapBox iframe{
+    width: 100%;
+  }
+  .contactPage .formBox{
+    margin: 0;
+    width: 100%;
+  }
+}

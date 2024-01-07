@@ -13,33 +13,33 @@ const SectionTwo = () => {
     const cardsData=[
         {id:1,title: <h5>20 +</h5>, desc: <p> Uğurla tamamlanmış layihələr </p> , img:[
             {
-                id:1,
+                id:10,
                 img:homeimg2
             },
         ]},
         {id:2,title: <h5>15 +</h5>,desc: <p> İxtisaslı komanda üzvləri </p> ,img:[
             {
-                id:1,
+                id:20,
                 img:homeimg3
             },
         ]},
         {id:3,title: <h5>30 +</h5>,desc: <p> Yerli və beynəlxalq mükafatlar və nişanlar </p>,img:[
             {
-                id:1,
+                id:30,
                 img:homeimg
             },
         ]},
         {id:4,title: <h5>10 + </h5>,desc:  <p> Texnologiyalar</p> ,img:[
         {
-            id:1,
+            id:40,
             img:img1
         },
         {
-            id:2,
+            id:50,
             img:img2
         },
         {
-            id:3,
+            id:60,
             img:img3
         }
             ]},
@@ -50,7 +50,7 @@ const SectionTwo = () => {
             <div className="cards">
                 {cardsData.map(card=>(
                     
-                    <div key={card.id} className="card">
+                    <div key={card.img} className="card">
                         {card.title}
                         {card.desc}
                         {

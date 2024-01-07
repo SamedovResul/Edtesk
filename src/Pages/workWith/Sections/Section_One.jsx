@@ -7,10 +7,10 @@ const SectionOne = () => {
         {id:2, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
         {id:3, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
         {id:4, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
-        {id:1, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
-        {id:2, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
-        {id:3, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
-        {id:4, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"}
+        {id:5, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
+        {id:6, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
+        {id:7, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"},
+        {id:8, logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeymOOX6DKuOJeN9zmZ4b9vNZapUyPkcWp2xyXabxZYA&s"}
     ]
   return (
     <div className="section-one">
