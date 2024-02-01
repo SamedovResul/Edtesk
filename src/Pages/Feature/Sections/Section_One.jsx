@@ -62,7 +62,7 @@ const SectionOne = () => {
                 const {desc,img} = data
 
                 return(
-                  <div >
+                  <div  key={data.img} >
                     <p> {desc} </p>
                     <img src={img} alt="" />
                   </div>

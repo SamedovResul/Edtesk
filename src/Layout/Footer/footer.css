@@ -1,15 +1,16 @@
 .footer {
-  background-color: #0c5adb;
+  /* background-color: #0c5adb; */
+  background-color: #462aff;
+  /* display: none; */
 }
 .footer .footer-container {
   color: white;
   padding: 20px;
 }
 
-.footer .footer-container .footer-header{
-    margin: 40px 0;
-    text-align: center;
-
+.footer .footer-container .footer-header {
+  margin: 40px 0;
+  text-align: center;
 }
 
 .footer .footer-container .footer-header h2 img {
@@ -30,40 +31,38 @@
   font-weight: 700;
 }
 
-
 .footer .footer-container .footer-header .buy-now:hover {
-    background-color: #00247e;
-    color: white;
+  background-color: #00247e;
+  color: white;
 }
-.footer .footer-container .footer-nav{
-    display: flex;
-    justify-content: space-between;
+.footer .footer-container .footer-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer .footer-container .footer-nav nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer .footer-container .footer-nav nav ul li {
-    margin:0 10px;
+  margin: 0 10px;
 }
-.footer .footer-container .footer-nav nav ul li a{
-    text-decoration: none;
-    color: white;
-
-}
-
-@media screen and (max-width:1200px) {
-    .footer .footer-container .footer-header h2 {
-        font-size: 38px;
-    }
-    .footer .footer-container .footer-nav{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer .footer-container .footer-nav nav{
-        margin-top: 20px;
-    }
+.footer .footer-container .footer-nav nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer .footer-container .footer-header h2 {
+    font-size: 38px;
+  }
+  .footer .footer-container .footer-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-container .footer-nav nav {
+    margin-top: 20px;
+  }
+}

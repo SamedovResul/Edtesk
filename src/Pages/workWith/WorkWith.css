@@ -1,80 +1,95 @@
-.support-page{
-    background-color: #f4f5f9;
-    padding-bottom: 200px;
+.support-page {
+  background-color: #f4f5f9;
+  padding-bottom: 200px;
 }
-.support-page .section-one{
-    padding: 60px 0;
-}
-
-.support-page .section-one .support-container .support-header{
-    text-align: center;
+.support-page .section-one {
+  padding: 60px 0;
 }
 
-.support-page .section-one .support-container .support-header h5{
-    font-size: 30px;
-    font-weight: 900;
+.support-page .section-one .support-container .support-header {
+  text-align: center;
 }
 
-.support-page .section-one .support-container .support-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 40px;
+.support-page .section-one .support-container .support-header h5 {
+  font-size: 30px;
+  font-weight: 900;
 }
 
+.support-page .section-one .support-container .support-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
 
 .support-page .section-one .support-container .support-cards .support-card {
-    width: 20%;
-    margin: 10px 5px 10px 5px;
-    padding: 10px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+  width: 20%;
+  margin: 10px 5px 10px 5px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
-.support-page .section-one .support-container .support-cards .support-card img{
-    width: 60%;
+.support-page .section-one .support-container .support-cards .support-card img {
+  width: 60%;
 }
 
-.support-page .section-one .support-container .support-cards .support-card .user-about{
-    background: #1c1c24;
-    padding: 20px 18px 25px 28px;
-    margin: 0;
-    position: relative;
-    border-left: 3px solid #0c5adb;
+.support-page
+  .section-one
+  .support-container
+  .support-cards
+  .support-card
+  .user-about {
+  background: #1c1c24;
+  padding: 20px 18px 25px 28px;
+  margin: 0;
+  position: relative;
+  border-left: 3px solid #0c5adb;
+}
+.support-page
+  .section-one
+  .support-container
+  .support-cards
+  .support-card
+  .user-about:hover {
+  background-color: #0c5adb;
+  transition: 0.3s;
+}
+.support-page
+  .section-one
+  .support-container
+  .support-cards
+  .support-card
+  .user-about
+  h2 {
+  color: white;
+  font-size: 22px;
+}
+.support-page
+  .section-one
+  .support-container
+  .support-cards
+  .support-card
+  .user-about
+  span {
+  color: white;
+  display: inline-block;
+  margin-top: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .support-page .section-one .support-container .support-cards .support-card {
+    width: 45%;
+    margin: 10px;
+  }
+}
 
-}
-.support-page .section-one .support-container .support-cards .support-card .user-about:hover{
-    background-color: #0c5adb;
-    transition: .3s;
 
-}
-.support-page .section-one .support-container .support-cards .support-card .user-about h2{
-    color: white;
-    font-size: 22px;
-}
-.support-page .section-one .support-container .support-cards .support-card .user-about span{
-    color: white;
-    display: inline-block;
-    margin-top: 8px;
-}
-@media screen and (max-width:1200px) {
-    .support-page .section-one .support-container .support-cards{
-        grid-template-columns: repeat(2,auto);
-        justify-content: center;
-    }
-    .support-page .section-one .support-container .support-cards .support-card{
-        width: 350px;
-        margin: 15px;
-    }
-}
 
-@media screen and (max-width:800px) {
-    .support-page .section-one .support-container .support-cards{
-        grid-template-columns: repeat(1,auto);
-        justify-content: center;
-    }
+@media screen and (max-width: 600px) {
+  .support-page .section-one .support-container .support-cards .support-card {
+    width: 100%;
+  }
 }
-
