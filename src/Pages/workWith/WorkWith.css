@@ -1,7 +1,16 @@
+
+
 .support-page {
   background-color: #f4f5f9;
   padding-bottom: 200px;
 }
+
+@media(max-width:768px){
+  .support-page{
+    padding-bottom: 100px;
+  }
+}
+
 .support-page .section-one {
   padding: 60px 0;
 }

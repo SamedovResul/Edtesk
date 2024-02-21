@@ -5,6 +5,13 @@
   background: linear-gradient(to top, #f4f5f9, #f4f5f9, #fbfbfd, #fff, #fff);
   padding: 60px 0px;
 }
+
+@media(max-width:768px){
+  .demo-page .section-one{
+    padding: 20px 0px;
+  }
+}
+
 .demo-page .section-one .demo-header {
   text-align: center;
 }
