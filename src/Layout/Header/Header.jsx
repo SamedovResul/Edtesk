@@ -64,18 +64,19 @@ const Header = () => {
           </div>
           <div className="header-mobile-container">
             <div className="header-icon">
-              {scroll ? (
-                <img src={ScrollLogo} alt="logo" />
-              ) : (
+            {/* {scroll ? (
                 <img src={Logo} alt="logo" />
-              )}
+              ) : (
+                <img src={ScrollLogo} alt="logo" />
+              )} */}
+              <img src={ScrollLogo} alt="logo" />
             </div>
             <div className="menu-icon" onClick={() => setOpenMenu(!openMenu)}>
               {openMenu ? (
                 <img src={CloseIcon} alt="/" />
               ) : (
               // <img src={ MenuIcon} alt="/" />
-                <img src={scroll ? MenuIcon : MenuScroolIcon} alt="/" />
+                <img src={MenuIcon} alt="/" />
               )}
             </div>
           </div>
@@ -90,9 +91,6 @@ const Header = () => {
             <li>
               <a href="#demo"> Portfolio </a>
             </li>
-            {/* <li>
-                <a href="#inner">Inner Pages</a>
-              </li> */}
             <li>
               <a href="#support"> Haqqımızda </a>
             </li>
