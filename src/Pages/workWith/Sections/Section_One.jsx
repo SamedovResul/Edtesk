@@ -8,7 +8,6 @@ import img5 from '../../../assets/partnership/img5.jpg'
 import img6 from '../../../assets/partnership/img6.png'
 import img7 from '../../../assets/partnership/img7.gif'
 import img8 from '../../../assets/partnership/img8.jpg'
-import SupportImg1 from "../../../assets/anowar.jpg"
 const SectionOne = () => {
     const supportData=[
         {id:1, logo:img1},
