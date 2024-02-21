@@ -1,9 +1,11 @@
 import "../home.css"
 import React from 'react'
+import bgImage from "../../../assets/bgimage.jpg"
 
 const SectionOne = () => {
   return (
     <div className='section-one'>
+      <img className="bgImages" src={bgImage} alt="" />
         <div className="container">
             <div className="content">
               <h1>   Biznesiniz üçün <br /> <span>İT və Veb</span>həllər  </h1>
@@ -11,6 +13,7 @@ const SectionOne = () => {
                 həyata keçirdirik. <br /> Startup mərhələsindən böyük korporativ şirkətlərə qədər hər növ İT 
                 həlləri təklif edirik. </p>
               <p> contact@entesk.com </p>
+              
             </div>
         </div>
     </div>
