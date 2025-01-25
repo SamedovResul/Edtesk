@@ -12,7 +12,7 @@ const SectionOne = () => {
               işinizi daha yaxşı hala gətirək.
             </p>
             <p>contact@entesk.com</p>
-            <p>+994 55 660 91 55</p>
+            {/* <p>+994 55 660 91 55</p> */}
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4204.717866971006!2d49.82007984925487!3d40.39077245173373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d79159f13cf%3A0x55775705138fc93b!2sASK%20Plaza!5e0!3m2!1sen!2saz!4v1704541083735!5m2!1sen!2saz"

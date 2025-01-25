@@ -59,7 +59,7 @@ const Header = () => {
               </ul>
             </nav>
             <div className="contact">
-              <p> +994 55 660 91 55 </p>
+              {/* <p> +994 55 660 91 55 </p> */}
             </div>
           </div>
           <div className="header-mobile-container">
